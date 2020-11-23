@@ -62,11 +62,11 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 
 document.querySelector("#old").addEventListener("click", function() {
 	console.log("Old School");
-	document.querySelector("#myVideo").className = "oldTime";
+	video.classList.add("oldTime");
 });
 
 document.querySelector("#original").addEventListener("click", function() {
 	console.log("Original");
-	document.querySelector("#myVideo").className = null;
+	video.classList.remove("oldTime");
 });
 
